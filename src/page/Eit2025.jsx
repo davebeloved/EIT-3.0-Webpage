@@ -30,6 +30,7 @@ const Eit2025 = () => {
       {/* HERO SECTION */}
       <Eit2025HeroSection />
 
+      {/* ABOUT EIT 3.0rd */}
       <AboutEit2025 />
 
       {/* Courses Offered Card */}
