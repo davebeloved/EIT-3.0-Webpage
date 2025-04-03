@@ -47,7 +47,7 @@ const Eit2025 = () => {
 
       {/* HOW TO REGISTER SECTION */}
       <HowToRegisterForEit />
-      <Eit2025Faq />
+      {/* <Eit2025Faq /> */}
     </div>
     <Footer />
     </>
