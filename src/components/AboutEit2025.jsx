@@ -1,5 +1,6 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
+import EITImage from '../assets/eit.jpg'
 
 const AboutEit2025 = () => {
   // const navigate = useNavigate();
@@ -42,7 +43,7 @@ const AboutEit2025 = () => {
         </div>
         <div className="rounded-xl overflow-hidden lg:h-[90%] lg:mt-4">
           <img
-            src="/eit2025/eit.jpg"
+            src={EITImage}
             alt="about eit 3.0"
             className="w-full h-full "
           />
