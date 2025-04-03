@@ -24,7 +24,7 @@ const Eit2025 = () => {
   window.addEventListener("scroll", changeNavBackground);
   return (
     <>
-          <NavBar navScroll={navScroll} />
+        <NavBar navScroll={navScroll} />
 
     <div className="overflow-hidden font-sans antialiased text-gray-800">
       {/* HERO SECTION */}
