@@ -1,28 +1,26 @@
-import React, { useState } from "react";
+import React, {useEffect} from "react";
 import Eit2025 from "./page/Eit2025";
-import NavBar from "./components/NavBar";
-import { Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 
 const App = () => {
-  const [navScroll, setNavScroll] = useState(false);
-  const changeNavBackground = () => {
-    if (window.scrollY >= 20) {
-      setNavScroll(true);
-    } else {
-      setNavScroll(false);
-    }
-  };
 
-  window.addEventListener("scroll", changeNavBackground);
+  const {pathname} = useLocation()
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if(pathname !== '/eit2025'){
+      navigate('/eit2025')
+    }
+  }, [pathname])
+  
+
   return (
     <div>
-      <NavBar navScroll={navScroll} />
-      {/* <Routes>
-        <Route path="/" element={<Eit2025 />} />
-      </Routes> */}
-      <Eit2025 />
-      <Footer />
+      <Routes>
+        <Route path="/eit2025" element={<Eit2025 />} />
+      </Routes>
+      {/* <Eit2025 /> */}
+      
     </div>
   );
 };

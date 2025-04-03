@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Eit2025HeroSection from "../components/Eit2025HeroSection";
 import AboutEit2025 from "../components/AboutEit2025";
 import CoursesOffered from "../components/CourseOffered";
@@ -7,9 +7,25 @@ import TrainingDetails from "../components/TrainingDetails";
 import HowToRegisterForEit from "../components/HowToRegisterForEit";
 import AboutFacilitators from "../components/AboutFacilitators";
 import Eit2025Faq from "../components/Eit2025Faq";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+
 
 const Eit2025 = () => {
+  const [navScroll, setNavScroll] = useState(false);
+  const changeNavBackground = () => {
+    if (window.scrollY >= 20) {
+      setNavScroll(true);
+    } else {
+      setNavScroll(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeNavBackground);
   return (
+    <>
+          <NavBar navScroll={navScroll} />
+
     <div className="overflow-hidden font-sans antialiased text-gray-800">
       {/* HERO SECTION */}
       <Eit2025HeroSection />
@@ -32,6 +48,8 @@ const Eit2025 = () => {
       <HowToRegisterForEit />
       <Eit2025Faq />
     </div>
+    <Footer />
+    </>
   );
 };
 
