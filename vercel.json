@@ -1,6 +1,5 @@
 {
-    "rewrites": [
-      { "source": "/eit2025/(.*)", "destination": "/eit2025/index.html" }
-    ]
-  }
-  
+  "rewrites": [
+    { "source": "/eit2025/(.*)", "destination": "/index.html" }
+  ]
+}
