@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/eit2025/(.*)", "destination": "/index.html" }
+    { "source": "/eit2025/:path*", "destination": "/index.html" }
   ]
 }
