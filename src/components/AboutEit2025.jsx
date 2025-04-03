@@ -6,7 +6,7 @@ const AboutEit2025 = () => {
   // const navigate = useNavigate();
 
   return (
-    <div className="lg::py-20 mb-12 px-3 md:px-6 lg:px-10 -mt-52 lg:mt-52">
+    <div className="lg::py-20 mb-12 px-3 md:px-6 lg:px-10 -mt-56 lg:mt-52">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div>
           <div className="mb-5">
